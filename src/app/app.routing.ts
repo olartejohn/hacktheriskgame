@@ -11,6 +11,9 @@ import { AfterloginComponent } from './views/afterlogin/afterlogin.component';
 import { InstructionsComponent } from './views/instructions/instructions.component';
 import { Page1980Component } from './views/1980/1980.component';
 import { RegisterComponent } from './views/register/register.component';
+import { BeginComponent } from './views/begin/begin.component';
+import { MapComponent } from './views/map/map.component';
+import { FirstRiskComponent } from './views/firstrisk/firstrisk.component';
 
 export const routes: Routes = [
   {
@@ -44,6 +47,27 @@ export const routes: Routes = [
     component: AfterloginComponent,
     data: {
       title: 'Afterlogin Page'
+    }
+  },
+  {
+    path: 'begin',
+    component: BeginComponent,
+    data: {
+      title: 'Begin Page'
+    }
+  },
+  {
+    path: 'map',
+    component: MapComponent,
+    data: {
+      title: 'Map Page'
+    }
+  },
+  {
+    path: 'firstrisk',
+    component: FirstRiskComponent,
+    data: {
+      title: 'First Risk'
     }
   },
   {

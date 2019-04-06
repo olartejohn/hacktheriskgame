@@ -42,6 +42,9 @@ import { AppRoutingModule } from './app.routing';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
+import { BeginComponent } from './views/begin/begin.component';
+import { MapComponent } from './views/map/map.component';
+import { FirstRiskComponent } from './views/firstrisk/firstrisk.component';
 
 @NgModule({
   imports: [
@@ -66,7 +69,10 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
     AfterloginComponent,
     InstructionsComponent,
     Page1980Component,  
-    RegisterComponent
+    RegisterComponent,
+    BeginComponent,
+    MapComponent,
+    FirstRiskComponent
   ],
   providers: [{
     provide: LocationStrategy,
