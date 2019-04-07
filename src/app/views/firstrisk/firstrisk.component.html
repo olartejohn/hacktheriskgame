@@ -1,28 +1,28 @@
-  <div class="animated fadeIn">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-header">
-            Carta de la inundación
-            <div class="card-header-actions">
-              <a href="https://valor-software.com/ngx-bootstrap/#/carousel" target="_blank">
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-header">
+          Carta de la inundación
+          <div class="card-header-actions">
+            <a href="https://valor-software.com/ngx-bootstrap/#/carousel" target="_blank">
                 <small className="text-muted">tarjetas</small>
               </a>
-            </div>
           </div>
-          <div class="card-body">
-                <img src="https://loremflickr.com/900/500/mountains?lock=1" alt="First slide" style="display: block; width: 100%;">
+        </div>
+        <div class="card-body">
+          <img src="https://loremflickr.com/900/500/mountains?lock=1" alt="First slide" style="display: block; width: 100%;">
           </div>
         </div>
       </div>
       <div class="col-sm-6 col-md-4">
         <div class="card">
           <div class="card-header">
-            First Risk
+             <h5><strong>Risk</strong></h5>
           </div>
           <div class="card-body">
-              ¿Deseas eliminar a la población sin protegerla?
-              <textarea type="nombre" class="form-control" id="nombreInput"
+            ¿Deseas eliminar a la población sin protegerla?
+            <textarea type="nombre" class="form-control" id="nombreInput"
                placeholder="Titulo de la Tarjeta"
                required
                [(ngModel)]="model.titulo"
@@ -32,7 +32,7 @@
             placeholder="Descripcion de la Tarjeta"
             required
             [(ngModel)]="model.descripcion"
-            name="descripcion" [disabled]="true">
+            name="descripcion" [disabled]="true" rows="5">
             </textarea>
             <textarea type="costo" class="form-control" id="costoInput"
             placeholder="Costo de la Tarjeta"
@@ -52,7 +52,38 @@
             [(ngModel)]="model.CantidadPob"
             name="CantidadPob" [disabled]="true">
             </textarea>
-
+            <br>
+            <h6><strong>Mitigación:</strong></h6>
+            <textarea type="titulomitigacion" class="form-control" id="titulomitigacioninput"
+            placeholder=""
+            required
+            [(ngModel)]="model.titulomitigacion"
+            name="titulomitigacion" [disabled]="true">
+            </textarea>
+            <textarea type="descripcionmitigacion" class="form-control" id="descripcionmitigacioninput"
+            placeholder=""
+            required
+            [(ngModel)]="model.descripcionmitigacion"
+            name="descripcionmitigacion" [disabled]="true" rows="5"  >
+            </textarea>
+            <textarea type="costomitigacion" class="form-control" id="costomitigacioninput"
+            placeholder=""
+            required
+            [(ngModel)]="model.costomitigacion"
+            name="costomitigacion" [disabled]="true">
+            </textarea>
+            <textarea type="bienestarmitigacion" class="form-control" id="bienestarmitigacioninput"
+            placeholder=""
+            required
+            [(ngModel)]="model.bienestarmitigacion"
+            name="bienestarmitigacion" [disabled]="true">
+            </textarea>
+            <textarea type="cantidadpobmitigacion" class="form-control" id="cantidadpobmitigacioninput"
+            placeholder=""
+            required
+            [(ngModel)]="model.cantidadpobmitigacion"
+            name="cantidadpobmitigacion" [disabled]="true">
+            </textarea>
           </div>
         </div>
       </div>
