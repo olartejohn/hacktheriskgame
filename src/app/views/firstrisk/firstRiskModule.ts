@@ -11,14 +11,10 @@ import { FirstRiskComponent } from './firstrisk.component';
   imports: [
     CommonModule,
     FormsModule,
-<<<<<<< HEAD
-    PaginationModule.forRoot(),
-=======
     PaginationModule.forRoot()
->>>>>>> def41f1bf1a547f9468ee25f8019cfecf830a6f5
     ],
   declarations: [
-    
+
   ]
 })
 export class FirstRiskModule { }

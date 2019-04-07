@@ -1,1 +1,57 @@
+
 // Here you can add other styles
+$breakpoint-tablet:800px;
+$breakpoint-celular:480px;
+$breakpoint-pc:1280px;
+app-inicio{
+  margin: auto auto;
+  padding: 0px;
+  margin:0px;
+}
+.contenido{
+  @media (min-width: $breakpoint-pc) {
+    width: 600px;
+    margin: auto;
+  width: 50%;
+  }
+  @media (min-width: $breakpoint-tablet) {
+    width: 600px;
+    margin: auto;
+  width: 50%;
+  }
+  @media (min-width: $breakpoint-tablet) {
+    width: 600px;
+    margin: auto;
+  width: 50%;
+  }
+  h1{
+    color:#8FF4FF;
+  }
+  p{
+    color:#8FF4FF;
+  }
+  .foto{
+    margin:0px;
+    padding: 10px;
+    border: 1px solid #8FF4FF;
+    img{
+      padding:0px;
+      margin:0px;
+    }
+  }
+  .card{
+    background-color: $blue;
+    border:0px;
+    .logo{
+      display: block;
+      margin:auto auto;
+    }
+    p{
+      color:white;
+      text-align: center;
+    }
+  }
+  a:hover {
+    cursor: pointer;
+  }
+}

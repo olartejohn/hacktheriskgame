@@ -1,1 +1,8 @@
 // Variable overrides
+@import url('https://fonts.googleapis.com/css?family=Lato');
+$headings-font-family: "Lato";
+$font-family-sans: "Lato";
+$font-family-base:           $font-family-sans !default;
+
+$blue:#002631;
+$body-bg: $blue;
