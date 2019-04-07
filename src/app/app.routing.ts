@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+//Componentes camara
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { ZXingScannerModule } from './modules/zxing-scanner/zxing-scanner.module';
 
 // Import Containers
 import { DefaultLayoutComponent } from './containers';
@@ -80,17 +84,10 @@ export const routes: Routes = [
     }
   },
   {
-    path: 'tarjetas',
-    component: TarjetasComponent,
-    data: {
-      title: 'tarjetas'
-    }
-  },
-  {
-    path: 'instructions',
+    path: 'instrucciones',
     component: InstructionsComponent,
     data: {
-      title: 'Instructions Page'
+      title: 'Página de instrucciones'
     }
   },
   {
@@ -152,7 +149,9 @@ export const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
+  imports: [ RouterModule.forRoot(routes),
+  BrowserModule
+],
   exports: [ RouterModule ]
 })
 export class AppRoutingModule {}

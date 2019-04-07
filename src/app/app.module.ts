@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
+import { ZXingScannerModule } from './modules/zxing-scanner/zxing-scanner.module';
 
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
@@ -11,7 +14,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 };
 
 import { AppComponent } from './app.component';
-
+//import from camera
+import { CamComponent } from './cam.component';
 // Import containers
 import { DefaultLayoutComponent } from './containers';
 
@@ -22,6 +26,7 @@ import { AfterloginComponent } from './views/afterlogin/afterlogin.component';
 import { InstructionsComponent } from './views/instructions/instructions.component';
 import { Page1980Component } from './views/1980/1980.component';
 import { RegisterComponent } from './views/register/register.component';
+import { CabeceraComponent } from './views/estaticos/cabecera.component';
 
 const APP_CONTAINERS = [
   DefaultLayoutComponent
@@ -47,7 +52,6 @@ import { MapComponent } from './views/map/map.component';
 import { FirstRiskComponent } from './views/firstrisk/firstrisk.component';
 import { TarjetasComponent } from './views/tarjetas/tarjetas.component';
 import { FirstRiskModule } from './views/firstrisk/firstRiskModule';
-import { FormsModule } from '@angular/forms';
 import { InicioComponent } from './views/inicio/inicio.component';
 
 @NgModule({
@@ -64,7 +68,8 @@ import { InicioComponent } from './views/inicio/inicio.component';
     TabsModule.forRoot(),
     ChartsModule,
     FirstRiskModule,
-    FormsModule
+    FormsModule,
+    ZXingScannerModule.forRoot()
   ],
   declarations: [
     AppComponent,
@@ -80,7 +85,9 @@ import { InicioComponent } from './views/inicio/inicio.component';
     MapComponent,
     FirstRiskComponent,
     TarjetasComponent,
-    InicioComponent
+    InicioComponent,
+    CabeceraComponent,
+    CamComponent
   ],
   providers: [{
     provide: LocationStrategy,
