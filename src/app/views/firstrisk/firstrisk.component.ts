@@ -26,18 +26,27 @@ export class FirstRiskComponent {
        var resp = (Math.floor(Math.random() * this.tarjetasDyP.length)|0) ;
        this.model = this.tarjetasDyP[resp]
        console.log(this.tarjetasDyP);
+       console.log(this.model);
      }
 
 
      llenarlista(){
         this.tarjeta1.id = "1";
-        this.tarjeta1.nombre = "Inundación";
+        this.tarjeta1.titulo = "Inundación";
         this.tarjeta1.descripcion = "Esta es una inundación";
+        this.tarjeta1.Costo = 10000;
+        this.tarjeta1.CantidadPob = 100;
+        this.tarjeta1.Bienestar = 20;
+        this.tarjeta1.tipo="desastre";
         this.tarjetasDyP.push(this.tarjeta1);
 
         this.tarjeta2.id = "2";
-        this.tarjeta2.nombre = "Inundación";
-        this.tarjeta2.descripcion = "Esta es una inundación";
+        this.tarjeta2.titulo = "Esta es una tsunami";
+        this.tarjeta2.descripcion = "Esta es una tsunami";
+        this.tarjeta1.Costo = 50000;
+        this.tarjeta1.CantidadPob = 10000;
+        this.tarjeta1.Bienestar = 200;
+        this.tarjeta1.tipo="desastre";
         this.tarjetasDyP.push(this.tarjeta2);
 
      }

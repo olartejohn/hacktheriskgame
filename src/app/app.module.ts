@@ -45,8 +45,9 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
 import { BeginComponent } from './views/begin/begin.component';
 import { MapComponent } from './views/map/map.component';
 import { FirstRiskComponent } from './views/firstrisk/firstrisk.component';
-import { FirstRiskModule } from './views/firstrisk/FirstRiskModule';
-import { FormsModule } from "@angular/forms";
+import { TarjetasComponent } from './views/tarjetas/tarjetas.component';
+import { FirstRiskModule } from './views/firstrisk/firstRiskModule';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -76,7 +77,8 @@ import { FormsModule } from "@angular/forms";
     RegisterComponent,
     BeginComponent,
     MapComponent,
-    FirstRiskComponent
+    FirstRiskComponent,
+    TarjetasComponent
   ],
   providers: [{
     provide: LocationStrategy,
