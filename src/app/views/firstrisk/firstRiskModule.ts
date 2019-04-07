@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from "@angular/forms";
 import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { FirstRiskComponent } from './firstrisk.component';
 
 
 
@@ -11,7 +12,7 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
     CommonModule,
     FormsModule,
     PaginationModule.forRoot()
-  ],
+    ],
   declarations: [
 
   ]

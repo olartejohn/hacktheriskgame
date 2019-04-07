@@ -14,6 +14,7 @@ import { RegisterComponent } from './views/register/register.component';
 import { BeginComponent } from './views/begin/begin.component';
 import { MapComponent } from './views/map/map.component';
 import { FirstRiskComponent } from './views/firstrisk/firstrisk.component';
+import { TarjetasComponent } from './views/tarjetas/tarjetas.component';
 
 export const routes: Routes = [
   {
@@ -68,6 +69,13 @@ export const routes: Routes = [
     component: FirstRiskComponent,
     data: {
       title: 'First Risk'
+    }
+  },
+  {
+    path: 'tarjetas',
+    component: TarjetasComponent,
+    data: {
+      title: 'tarjetas'
     }
   },
   {
