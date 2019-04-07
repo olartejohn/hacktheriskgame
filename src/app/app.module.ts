@@ -48,6 +48,7 @@ import { FirstRiskComponent } from './views/firstrisk/firstrisk.component';
 import { TarjetasComponent } from './views/tarjetas/tarjetas.component';
 import { FirstRiskModule } from './views/firstrisk/firstRiskModule';
 import { FormsModule } from '@angular/forms';
+import { InicioComponent } from './views/inicio/inicio.component';
 
 @NgModule({
   imports: [
@@ -78,7 +79,8 @@ import { FormsModule } from '@angular/forms';
     BeginComponent,
     MapComponent,
     FirstRiskComponent,
-    TarjetasComponent
+    TarjetasComponent,
+    InicioComponent
   ],
   providers: [{
     provide: LocationStrategy,

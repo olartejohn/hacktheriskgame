@@ -15,11 +15,12 @@ import { BeginComponent } from './views/begin/begin.component';
 import { MapComponent } from './views/map/map.component';
 import { FirstRiskComponent } from './views/firstrisk/firstrisk.component';
 import { TarjetasComponent } from './views/tarjetas/tarjetas.component';
+import { InicioComponent } from './views/inicio/inicio.component';
 
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'dashboard',
+    redirectTo: 'inicio',
     pathMatch: 'full',
   },
   {
@@ -41,6 +42,13 @@ export const routes: Routes = [
     component: LoginComponent,
     data: {
       title: 'Login Page'
+    }
+  },
+  {
+    path: 'inicio',
+    component: InicioComponent,
+    data: {
+      title: 'Inicio'
     }
   },
   {
