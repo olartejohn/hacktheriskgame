@@ -25,6 +25,7 @@ export class FirstRiskComponent {
 
     ngOnInit() {
       this.cargarTarjeta();
+      this.llenarUsuarioIconos();
     }
 
     cargarTarjeta() {
@@ -41,9 +42,26 @@ export class FirstRiskComponent {
        this.model = this.tarjetasDyP[resp]
        console.log(this.tarjetasDyP);
        console.log(this.model);
-       this.llenarUsuarioIconos();
+       
+       this.restarvariables();
      }
 
+     cargarTarjetaNo() {
+
+      this.llenarlista()
+      var maxlength = 0;
+      var i =0;
+      for (i= 0; i < this.tarjetasDyP.length;i++){
+        if (this.tarjetasDyP[i].length > maxlength){
+         maxlength = this.tarjetasDyP[i].length;
+       }
+      }
+     var resp = (Math.floor(Math.random() * this.tarjetasDyP.length)|0) ;
+     this.model = this.tarjetasDyP[resp]
+     console.log(this.tarjetasDyP);
+     console.log(this.model);
+
+   }
 
      llenarlista(){
        this.tarjeta1.id = "1";
