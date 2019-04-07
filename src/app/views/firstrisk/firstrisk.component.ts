@@ -15,7 +15,11 @@ export class FirstRiskComponent {
     public usuario: Usuario = new Usuario();
 
 
-     cargarTarjeta() {
+    ngOnInit() {
+      this.cargarTarjeta();
+    }
+
+    cargarTarjeta() {
 
         this.llenarlista()
         var maxlength = 0;
