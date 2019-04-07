@@ -1,4 +1,7 @@
+
 <div class="app-body">
+  <app-cabecera></app-cabecera>
+
   <main class="main d-flex align-items-center">
     <div class="container">
       <div class="row">
@@ -7,19 +10,17 @@
             <div class="card p-4">
               <div class="card-body">
                 <form>
-                  <figure>
-                    <img src="https://banner2.kisspng.com/20180403/bee/kisspng-tasmanian-devil-platypus-clip-art-griffin-5ac4111ddd6b48.5129867315227988779069.jpg" alt="The Pulpit Rock" width="304" height="500">
-                  </figure>
+                  <app-camera></app-camera>
                 </form>
               </div>
             </div>
-            <div class="card text-white bg-primary py-5 my-n3" style="padding-top:10rem!important;">
+            <div class="card text-white bg-primary p-4">
               <div class="card-body text-justify">
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, auctor dignissim eros massa praesent penatibus viverra, mattis posuere sollicitudin pretium mollis eleifend. Iaculis eros dictum tristique cursus inceptos fusce proin ligula
                   praesent, cum felis bibendum torquent mauris taciti natoque arcu laoreet enim, sociosqu ornare varius ut nunc vestibulum nisl accumsan. Leo parturient rhoncus fames morbi ultrices tempor magna, dictumst fermentum fringilla velit
                   libero ac posuere, hac ut orci taciti aenean praesent.</p>
                 <div class="col-6">
-                  <button type="button" style="background-color: #000000;" [routerLink]="['/instructions']" class="btn btn-primary px-4">Siguiente</button>
+                  <button type="button" style="background-color: #000000;" [routerLink]="['/instrucciones']" class="btn btn-primary px-4">Siguiente</button>
                 </div>
               </div>
             </div>

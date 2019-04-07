@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-
-@Component({
+import { CamComponent } from '../cam.component';
+@Component({ 
   selector: 'app-dashboard',
   templateUrl: 'afterlogin.component.html'
 })
