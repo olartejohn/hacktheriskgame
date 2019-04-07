@@ -10,10 +10,10 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
   imports: [
     CommonModule,
     FormsModule,
-    PaginationModule.forRoot()
-  ],
+    PaginationModule.forRoot(),
+    ],
   declarations: [
-
+    
   ]
 })
 export class FirstRiskModule { }

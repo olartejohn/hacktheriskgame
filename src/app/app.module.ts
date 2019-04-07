@@ -45,6 +45,8 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
 import { BeginComponent } from './views/begin/begin.component';
 import { MapComponent } from './views/map/map.component';
 import { FirstRiskComponent } from './views/firstrisk/firstrisk.component';
+import { FirstRiskModule } from './views/firstrisk/FirstRiskModule';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   imports: [
@@ -58,7 +60,9 @@ import { FirstRiskComponent } from './views/firstrisk/firstrisk.component';
     PerfectScrollbarModule,
     BsDropdownModule.forRoot(),
     TabsModule.forRoot(),
-    ChartsModule
+    ChartsModule,
+    FirstRiskModule,
+    FormsModule
   ],
   declarations: [
     AppComponent,
@@ -68,7 +72,7 @@ import { FirstRiskComponent } from './views/firstrisk/firstrisk.component';
     LoginComponent,
     AfterloginComponent,
     InstructionsComponent,
-    Page1980Component,  
+    Page1980Component,
     RegisterComponent,
     BeginComponent,
     MapComponent,
