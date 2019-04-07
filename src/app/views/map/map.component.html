@@ -1,0 +1,28 @@
+<div class="animated fadeIn">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-header">
+            Mapa de la inundación
+            <div class="card-header-actions">
+              <a href="https://valor-software.com/ngx-bootstrap/#/carousel" target="_blank">
+                <small className="text-muted">docs</small>
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+                <img src="https://floodmap.modaps.eosdis.nasa.gov/Products/080W010N/2019/MFM_2019094_080W010N_3D3OT.png" alt="Second slide" style="display: block; width: 100%;">
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2 col-xl mb-3 mb-xl-0">
+        <button type="button" class="btn btn-block btn-success">Siguiente</button>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2 col-xl mb-3 mb-xl-0">
+        <button type="button" class="btn btn-block btn-danger">Anterior</button>
+      </div>
+  
+      <a class="btn" [routerLink]="['/dashboard']"><i class="btn btn-block btn-success"></i> &nbsp;Siguiente</a>
+    </div>
+</div>
+  
