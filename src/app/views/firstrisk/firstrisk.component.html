@@ -23,11 +23,36 @@
           <div class="card-body">
               ¿Deseas eliminar a la población sin protegerla?
               <textarea type="nombre" class="form-control" id="nombreInput"
-               placeholder="Nombre de la Tarjeta" 
+               placeholder="Titulo de la Tarjeta" 
                required 
-               [(ngModel)]="model.nombre"
+               [(ngModel)]="model.titulo"
                name="nombre" [disabled]="true">
             </textarea>
+            <textarea type="descripcion" class="form-control" id="descripInput"
+            placeholder="Descripcion de la Tarjeta" 
+            required 
+            [(ngModel)]="model.descripcion"
+            name="descripcion" [disabled]="true">
+            </textarea>
+            <textarea type="costo" class="form-control" id="costoInput"
+            placeholder="Costo de la Tarjeta" 
+            required 
+            [(ngModel)]="model.Costo"
+            name="costo" [disabled]="true">
+            </textarea>
+            <textarea type="bienestar" class="form-control" id="bienestarInput"
+            placeholder="Bienestar de la Tarjeta" 
+            required 
+            [(ngModel)]="model.Bienestar"
+            name="bienestar" [disabled]="true">
+            </textarea>
+            <textarea type="CantidadPob" class="form-control" id="CantidadPobInput"
+            placeholder="Cantidad población de la Tarjeta" 
+            required 
+            [(ngModel)]="model.CantidadPob"
+            name="CantidadPob" [disabled]="true">
+            </textarea>
+            
           </div>
         </div>
       </div>
